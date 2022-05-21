@@ -4,7 +4,7 @@ pipeline{
     stage("execute python code"){
       steps{
 //         sh 'python methodtest.py'
-        sh 'go version'
+        bat 'go version'
       }
     }
   }
