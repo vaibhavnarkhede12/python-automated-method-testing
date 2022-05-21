@@ -4,8 +4,8 @@ pipeline{
   
   parameters{
     text(
-      name: "name of python file"
-      description: "please enter the name of python file"
+      name: "name of python file",
+      description: "please enter the name of python file",
       trim: "true"
     )
   }
