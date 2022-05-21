@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("execute python code"){
       steps{
-        sh 'python methodtest.py
+        sh 'python methodtest.py'
       }
     }
   }
