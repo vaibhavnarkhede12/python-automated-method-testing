@@ -4,7 +4,7 @@ pipeline{
   
   parameters{
     text(
-      name: "name of python file",
+      name: "pythonFile",
       description: "please enter the name of python file",
       trim: "true"
     )
@@ -12,7 +12,8 @@ pipeline{
   stages{
     stage("execute python code"){
       steps{
-        bat 'C:/Users/VAIBHAV/AppData/Local/Programs/Python/Python38/python.exe methodtest.py'
+//         bat 'C:/Users/VAIBHAV/AppData/Local/Programs/Python/Python38/python.exe methodtest.py'
+        bat 'C:/Users/VAIBHAV/AppData/Local/Programs/Python/Python38/python.exe ${env.pythonFile}'
       }
     }
   }
