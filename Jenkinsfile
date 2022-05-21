@@ -1,6 +1,6 @@
 pipeline{
   agent any
-  tools {python "python"}
+//   tools {python "python"}
   stages{
     stage("execute python code"){
       steps{
