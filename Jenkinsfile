@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage("execute python code"){
       steps{
-        bat 'python methodtest.py'
+        bat 'C:\Users\VAIBHAV\AppData\Local\Programs\Python\Python38\python.exe methodtest.py'
 //         bat 'go version'
       }
     }
