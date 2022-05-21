@@ -13,7 +13,7 @@ pipeline{
     stage("execute python code"){
       steps{
 //         bat 'C:/Users/VAIBHAV/AppData/Local/Programs/Python/Python38/python.exe methodtest.py'
-        bat "C:/Users/VAIBHAV/AppData/Local/Programs/Python/Python38/python.exe ${params.name}"
+        bat "C:/Users/VAIBHAV/AppData/Local/Programs/Python/Python38/python.exe ${params.pythonFile}"
       }
     }
   }
