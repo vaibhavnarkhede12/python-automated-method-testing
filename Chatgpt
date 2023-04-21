@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CONNECTION_ID="my_gcp_connection"
+CONNECTION_TYPE="google_cloud_platform"
+PROJECT_ID="my-project-id"
+KEYFILE_PATH="/path/to/my/keyfile.json"
+SCOPES=""  # Leave this blank unless you need to specify additional scopes.
+
+airflow connections add $CONNECTION_ID \
+    --conn-type $CONNECTION_TYPE \
+    --conn-extra '{"extra__google_cloud_platform__project": "'$PROJECT_ID'", "extra__google_cloud_platform__key_path": "'$KEYFILE_PATH'", "extra__google_cloud_platform__scope": "'$SCOPES'"}'
